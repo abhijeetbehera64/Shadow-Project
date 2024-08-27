@@ -1,14 +1,6 @@
 pipeline {
     agent any
     stages {
-	 stage ('PreBuild') {
-            steps {
-                script {
-                    bat "cd VehicleManagement && dotnet restore"
-                    bat "cd VehicleManagement && dotnet build --no-build"
-                }
-            }
-        }
         stage ('Build') {
                 steps {
                     script {
