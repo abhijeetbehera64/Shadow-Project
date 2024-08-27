@@ -5,7 +5,7 @@ pipeline {
             steps {
                 script {
                     bat "cd VehicleManagement && dotnet restore"
-                    bat "cd VehicleManagement && dotnet msbuild /validate"
+                    bat "cd VehicleManagement && dotnet build --no-build"
                 }
             }
         }
