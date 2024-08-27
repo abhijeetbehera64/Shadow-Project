@@ -1,12 +1,14 @@
 pipeline {
     agent any
     stages {
-       stage ('Build') {
-          steps {
-             script {
-                bat 'dotnet build'
+        stage ('Build') {
+            dir('VehicleManagement/Vehicle_Management') {
+                steps {
+                    script {
+                        bat 'dotnet build'
+                    }
+                }
             }
         }
     }
-}
 }
