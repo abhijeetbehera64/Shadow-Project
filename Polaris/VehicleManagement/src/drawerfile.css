@@ -1,0 +1,73 @@
+.topLine {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color:powderblue;
+    margin-bottom: 10px;
+}
+.searchBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.overlay {
+    border: 2px solid red;
+
+}
+
+.overlaycontent {
+    font-size: 1px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    margin: 0 1rem;
+    
+}
+
+.formBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -80px;
+    /* border: 2px solid red;
+    display: flex;
+    flex-direction: column; */
+    /* margin-left: -200px; */
+    /* align-items: center;
+    width: 100px;*/
+    background-color: white;
+    transform: 'translate(-50%, -50%)';
+    position: 'absolute';
+    top: '50%';
+    left: '80%';
+    width: 200px;
+    padding: 10;
+    /* bgcolor: 'background.paper', */
+    border: 2px solid red;
+    box-shadow: 24;
+    /* p: 4, */
+}
+.formsInput{
+    width: 17rem;
+}
+.css-1rwt2y5-MuiButtonBase-root-MuiButton-root{
+    width: 17rem;
+}
+.css-2ulfj5-MuiTypography-root{
+    margin-left: 4rem;
+}
+.css-2ulfj5-MuiTypography-root{
+    margin-left: -1.5rem;
+}
+
+.css-l7ddnh-MuiDrawer-docked .MuiDrawer-paper{
+    background-color: #004e97;
+    color: white;
+}
