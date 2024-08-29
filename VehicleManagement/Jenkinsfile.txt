@@ -8,5 +8,21 @@ pipeline {
                     }
                 }
             }
+stage('Static Code Analysis') {
+	            steps {
+		             script{
+			                def scannerHome = tool name: 'sonarcloud', type: 'hudson.plugins.sonar.SonarRunnerInstallation'
+	                    withSonarQubeEnv('sonarQube') {
+	                        bat """
+	                        C:\\ProgramData\\Jenkins\\.jenkins\\tools\\hudson.plugins.sonar.SonarRunnerInstallation\\sonarcloud\\bin\\sonar-scanner\
+	                 -Dsonar.projectKey=polaris_polaris-vehicle-management\
+	                 -Dsonar.sources=VehicleManagement//Vehicle_Management\
+	                 -Dsonar.organization=polaris\
+	                 -Dsonar.login=a6d40bf0ca9bef660c7e2a281f7db6c7e6390eb7\
+	                 """
+                    }
+		}
+	    }
+        }
         }
     }
