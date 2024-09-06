@@ -18,7 +18,7 @@ stage('Static Code Analysis') {
 	                 -Dsonar.projectKey=polaris_polaris-vehicle-management\
 	                 -Dsonar.sources=VehicleManagement//Vehicle_Management\
 	                 -Dsonar.organization=polaris\
-	                 -Dsonar.login=a6d40bf0ca9bef660c7e2a281f7db6c7e6390eb7\
+	                 -Dsonar.login=1ead1e8b933715de88ea3b93a369ec165175395a\
 	                 """
                     }
 		}
